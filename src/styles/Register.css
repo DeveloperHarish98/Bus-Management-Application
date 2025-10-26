@@ -1,0 +1,77 @@
+/* Register Container */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+/* Paper Styling */
+.register-paper {
+  padding: 2rem;
+  width: 100%;
+  max-width: 600px;
+  margin: 2rem auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Title */
+.register-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #1976d2;
+  font-weight: 600;
+}
+
+/* Form Layout */
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Form Fields */
+.register-form .MuiTextField-root,
+.register-form .MuiFormControl-root {
+  margin-bottom: 1rem;
+}
+
+/* Submit Button */
+.register-button {
+  margin-top: 1rem;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: none;
+  border-radius: 4px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .register-paper {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+  
+  .register-title {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Error Message Styling */
+.MuiAlert-root {
+  margin-top: 1rem;
+}
+
+/* Form Field Focus */
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #1976d2;
+}
+
+.MuiInputLabel-root.Mui-focused {
+  color: #1976d2;
+}

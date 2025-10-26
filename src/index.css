@@ -1,0 +1,95 @@
+/* Global Styles for Bus Management System */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background-color: #f4f6f9;
+  line-height: 1.6;
+}
+
+/* Container Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* Form Styles */
+.form-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-top: 20px;
+}
+
+/* Button Styles */
+.MuiButton-root {
+  text-transform: none;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.MuiButton-containedPrimary {
+  background-color: #1976d2;
+}
+
+.MuiButton-containedPrimary:hover {
+  background-color: #1565c0;
+}
+
+/* Card/Paper Styles */
+.MuiPaper-root {
+  border-radius: 12px;
+  transition: box-shadow 0.3s ease;
+}
+
+.MuiPaper-root:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styles */
+.MuiTableContainer-root {
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .form-container {
+    padding: 15px;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+/* Hide error alerts */
+.MuiAlert-standardError,
+.MuiAlert-filledError,
+.MuiAlert-outlinedError,
+.MuiAlert-root[role="alert"][aria-describedby*="notistack-snackbar"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+  pointer-events: none !important;
+}
